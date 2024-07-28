@@ -1,0 +1,97 @@
+.search-magnifying{ 
+    background-color: #fff; 
+    overflow: hidden;
+    height:279.797px;
+    display:none;
+    position: sticky;
+    max-width: 1920px;
+    top:80px;
+    left:0px;
+    z-index: 15;
+
+}
+  .search-magnifying-container{
+    width: 100%;
+    width: 1110px;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    height:278px;
+  }
+.magnifying-heading-wrapper{
+   display:flex;
+   flex-direction:row;
+   height:139px;
+   justify-content:space-between;
+   color: #141719;
+   font-size: 16px;
+   align-items: center;
+   
+}
+.magnifying-heading-wrapper div{
+  width:50%;
+  display:flex;
+  align-items:center;
+  height: 48px;
+
+}
+.magnifying-svg{
+  display:flex;
+  justify-content:flex-end;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.magnifying-svg svg{
+  padding:10px;
+  border-radius:50%;
+  background-color:#EEF1F1;
+  transition: background-color 0.3s ease;
+}
+.magnifying-svg svg:hover{
+  background-color:#F6F8F8;
+}
+
+.magnifying-filter-wrapper{
+  display:flex;
+  flex-direction:column;
+  height:139px;
+  justify-content:space-between;
+  
+}
+
+.magnifying-filter-input{
+    font-size:14px;
+    line-height:20px;
+    vertical-align:middle;
+    background:#F6F8F8;
+    color:#333333;
+    height:64px;
+    border:1px solid #EAEDED;
+    border-radius:4px;
+    padding: 8px 44px 8px 44px;
+    cursor:text;
+    
+}
+.magnifying-filter-categories{
+  height:36px;
+  display:flex;
+}
+
+.magnifying-filter-category{
+  display:inline-flex;
+  flex-direction:row;
+  margin-right:25px;
+  font-size:14px;
+  font-weight:700;
+  color:#9EA3A5;
+  padding: 0 0 10px 0;
+  cursor:pointer;
+  transition: all 0.3s ease;
+
+}
+.magnifying-filter-category:hover{
+  border-bottom: 2px solid  #182CC0;
+  color:#141719;
+}

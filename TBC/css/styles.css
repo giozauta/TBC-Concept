@@ -1,0 +1,194 @@
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px; /* Set the width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue; /* Set the background color of the thumb */
+    border-radius:2px; /* Optional: Round the corners of the thumb */
+}
+
+/* Horizontal scrollbar specific styling */
+::-webkit-scrollbar-thumb:horizontal {
+    height: 2px; /* Set the height of the thumb for horizontal scrollbar */
+}
+
+*{   
+  box-sizing: border-box;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #555f62;
+    background-color: #F9FAFA;
+    font-size: 16px;
+    font-weight:500;
+    line-height: 27.2px;
+    font-family:"Open Sans",sans-serif;
+    letter-spacing: 0.9px;
+    position:relative;
+    max-width: 1920px;
+    overflow-x: hidden;    
+}
+
+/*header section*/
+.header{
+    z-index:10;
+    height: 80px;
+    max-width: 1920px;
+    background-color: #fff;
+    border-bottom: 1px solid #eef1f1;
+    padding-left: 47px;
+    padding-right: 47px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*header container section */
+.header-container{
+    max-width: 1110px;
+    grid-column-gap: 32px;
+    margin: auto;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+/*h-container-seaction-1*/
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    max-width: 165px;
+    overflow: hidden;
+}
+
+.header-logo:visited{
+    color:#555f62;
+}
+/*h-container-section-3*/
+.header-buttons{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 40px;
+  width: 321px;
+ 
+}
+.header-buttons-box{
+    cursor:pointer; 
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.header-buttons-box img{
+    margin-right:10px;
+}
+.header-buttons-box svg{
+    margin-right: 3px;
+}
+/*navigation lang button*/
+.lang-toggle{
+    display: flex;
+    font-weight:700;
+    font-size:16px;
+    height: 36px;
+    width: 67px;
+    justify-content: center;
+    align-items: center;
+    color:#555F62;
+    padding: 0 8px 0 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.8s ease;
+    position: absolute;
+    z-index: 500;
+}
+
+.lang-toggle:hover{
+    background-color:#EEF1F1;
+    z-index: 500;
+}
+.lang-toggle svg{
+    position: relative;
+    top: 4px;
+    z-index: 500;
+}
+.lang-dropdown{
+    font-weight: 500;
+    width: 67px;
+    border: 1px solid #E1E4E5;
+    padding: 8px 0 8px;
+    display: flex;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    background-color:#fff;
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    transition:opacity 0.5s ease;
+    z-index: 500;
+    
+}
+.lang-toggle:hover .lang-dropdown{
+    opacity: 1;
+    z-index: 500;
+}
+.magnifire{
+    display: flex;
+    color:#555f62;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+}
+.magnifire:hover{
+    color:#3295ce;
+}
+.arrow-link{
+    grid-column-gap: 6px;
+    color: #182cc0;
+    text-transform: uppercase;
+    flex: none;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    display: flex;
+    cursor: pointer;
+
+}
+.arrow-link:hover{
+    color:#3295ce;
+}
+/*below-header-section word-main*/
+.word-main{
+    font-size: 12px;
+    line-height: 20.4px;
+    color: #555f62;
+    padding: 24px 0 24px 0;
+    height: 68.3906px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    letter-spacing:1px;
+}
+.word-main div{
+    width:1110px;
+    margin: auto;
+}
