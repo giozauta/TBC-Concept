@@ -336,7 +336,7 @@
         
     }
 /*section-8-home-hero*/
-    .section-home-hero2{border: 2px solid black;
+    .section-home-hero2{
        max-width: 480px;
        height: 350px;
        display: flex;
@@ -374,7 +374,7 @@
         height: auto;
         font-size: 14px;
     }
-    .banner-text-box button{border: 2px solid black;
+    .banner-text-box button{
         width: 420px;
         font-weight:550;
     }
